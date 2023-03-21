@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+    <div class="childOne">
+        <p id="inputText"></p>
+        <p id="outputText"></p>
+    </div>
+    <br>
+    <div class="childTwo">
+        
+        <button  class="firstRow" onclick="clickMe('(')"><strong>(</strong></button>
+        <button  class="firstRow" onclick="clickMe(')')"><strong>)</strong></button>
+        <button  class="firstRow" onclick="calculate()"><strong>ans</strong></button>
+        <button  class="firstRow" onclick="clickMe(del)"><strong>del</strong></button>
+        <button  class="firstRow" onclick="erase(clear)"><strong>clear</strong></button>
+        
+         <br><br>
+        <button onclick="clickMe(7)"><strong>7</strong></button>
+        <button onclick="clickMe(8)"><strong>8</strong></button>
+        <button onclick="clickMe(9)"><strong>9</strong></button>
+        <button class="firstRow" onclick="clickMe('%')"><strong>%</strong></button>
+        <button class="firstRow" onclick="clickMe('Math.sqrt(')"><strong>√</strong></button>
+        
+        <br><br>
+        <button onclick="clickMe(4)"><strong>4</strong></button>
+        <button onclick="clickMe(5)"><strong>5</strong></button>
+        <button onclick="clickMe(6)"><strong>6</strong></button>
+        <button  class="firstRow" onclick="clickMe('*')"><strong>×</strong></button>
+        <button  class="firstRow" onclick="clickMe('/')"><strong>÷</strong></button>
+
+        <br><br>
+        <button onclick="clickMe(1)"><strong>1</strong></button>
+        <button onclick="clickMe(2)"><strong>2</strong></button>
+        <button onclick="clickMe(3)"><strong>3</strong></button>
+        <button class="firstRow" onclick="clickMe('+')"><strong>+</strong></button>
+        <button class="firstRow" onclick="clickMe('-')"><strong>-</strong></button>
+
+        <br><br>
+        <button class="firstRow" onclick="clickMe('.')"><strong>.</strong></button>
+        <button onclick="clickMe(0)"><strong>0</strong></button>
+        <button class="firstRow" onclick="clickMe('**')"><strong>^</strong></button>
+        <button class="enter" onclick="calculate()"><strong>ENTER</strong></button>
+    
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
